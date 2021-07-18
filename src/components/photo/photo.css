@@ -1,0 +1,19 @@
+.photo{
+    background-color: #1e2025;
+}
+
+.selected{
+    height: 70%
+}
+
+.selected div img{
+    width: 70%;
+    height: 60%;
+}
+.slide div img{
+    width: 500px;
+}
+.photo__wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+}

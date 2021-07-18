@@ -1,0 +1,34 @@
+.header {
+    height: 160px;
+    background-color: #1e2025;
+}
+.header__tittle{
+    border-bottom: 2px solid #fff;
+}
+.header__tittle h1{
+color: #fff;
+    margin: 0;
+}
+.header__wrapper{
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.header__navbar{
+    height: 50px;
+        
+    display: flex;
+}
+.header__navbar-item{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-right: 20px
+}
+
+
+.header__navbar-item a{
+    color: #fff;
+    text-decoration: none;
+
+}

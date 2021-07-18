@@ -1,0 +1,82 @@
+.home {
+    height: 800px;
+    background-color: #1e2025;
+}
+
+.home__wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.home__container {
+    overflow: hidden;
+    height: 720px;
+    background-color: #26282d;
+    display: flex;
+}
+
+.home__container-info {
+    width: 50%;
+}
+
+.home__container-info h2 {
+    margin-top: 150px;
+    font-size: 72px;
+    line-height: 1.25em;
+    text-align: center;
+    color: #fff;
+}
+
+.home__container-info p {
+    color: #fff;
+    line-height: 1.67em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home__container-photo {
+    position: relative;
+}
+
+.home__container-photo img {
+    position: absolute;
+    top: -200px;
+}
+
+.home__contacts {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__contacts h3 {
+    font-size: 50px;
+    line-height: 1.35px;
+}
+
+.home__contacts h4 {
+    font-size: 30px;
+    line-height: 1.35px;
+    font-weight: 300;
+}
+
+.home__footer {
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #1e2025;
+}
+@media (max-width: 1300px){
+    .home__container{
+        display: flex;
+        flex-direction: column;
+        height: 600px
+    }
+}
