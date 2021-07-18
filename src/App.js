@@ -4,27 +4,27 @@ import Home from './components/Header/home/Home';
 import Biography from './components/biography/Biography';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Photo from './components/photo/Photo';
-
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
-
       </div>
       <Switch>
         <Route path="/home">
           <Home />
         </Route>
-        <Route path="/biography">
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/biography" exact>
           <Biography />
         </Route>
-        <Route path="/photos">
+        <Route path="/photos" exact>
         <Photo />
         </Route>
       </Switch>
     </BrowserRouter>
   );
 }
-
 export default App;
