@@ -18,21 +18,22 @@ const Photo = () => {
       <div data-aos="fade-up"
     data-aos-duration="3000" className="photo__wrapper">
         <Carousel>
+        {/* <div>
+            <img src={img1} alt="photo" />
+            <p className="legend"></p>
+          </div>
+          <div> */}
           <div>
             <img src={img1} alt="photo" />
-            <p className="legend">Legend 1</p>
           </div>
           <div>
             <img src={img2} alt="photo" />
-            <p className="legend">Legend 2</p>
           </div>
           <div>
             <img src={img3} alt="photo" />
-            <p className="legend">Legend 3</p>
           </div>
           <div>
             <img src={img4} alt="photo" />
-            <p className="legend">Legend 3</p>
           </div>
         </Carousel>
       </div>

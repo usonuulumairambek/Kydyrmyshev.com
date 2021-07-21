@@ -3,6 +3,7 @@ import './home.css';
 import homeImg from './images/homeImg.webp'
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import Contacts from '../contacts/Contacts';
 
 const Home = () => {
     useEffect(() => {
@@ -26,12 +27,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div  data-aos="zoom-in" className="home__contacts">
-                <h3>
-                    Contacts
-                </h3>
-                <h4>fonder@list.ru</h4>
-            </div>
+          <Contacts />
             <div className="home__footer">
                 <p>©2021 Ruslan Kydyrmyshev</p>
             </div>

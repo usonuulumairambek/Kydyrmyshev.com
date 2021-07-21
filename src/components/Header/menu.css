@@ -1,0 +1,40 @@
+.burger {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    z-index: 10;
+    /* transform: translate(300px); */
+    transition: all 1s ease 1s;
+    width: 50%;
+    background-color: #002480;
+    height: 100%;
+    transform: translate(300px);
+}
+
+.menu.active {
+    transform: translate(0);
+}
+
+.burger img {
+    width: 50px;
+    position: relative;
+    z-index: 11;
+}
+
+.burger div nav {
+    z-index: 9;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+}
+.navbar__social{
+    margin-top: 20px;
+    display: flex;
+}

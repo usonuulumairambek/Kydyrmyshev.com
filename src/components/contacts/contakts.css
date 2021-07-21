@@ -1,0 +1,21 @@
+legend {
+    font-size: 3em;
+    color: #1e2025;
+}
+
+.form-control {
+    color: #1e2025;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2025;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+}
