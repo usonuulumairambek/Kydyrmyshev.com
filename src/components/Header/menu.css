@@ -36,5 +36,18 @@
 }
 .navbar__social{
     margin-top: 20px;
+}
+.navbar__social-inss a img{
+    width: 130px;
+}
+.navbar__social-fb a img{
+    width: 70px;
+}
+.navbar__social-inss{
     display: flex;
+    justify-content: center;
+}
+.navbar__social-fb{
+    display: flex;
+    justify-content: center;
 }

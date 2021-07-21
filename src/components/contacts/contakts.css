@@ -10,7 +10,7 @@ legend {
     margin-top: 20px;
     border-radius: 10px;
 }
-button{
+.form__btn{
     display: flex;
     justify-content: center;
     align-items: center;

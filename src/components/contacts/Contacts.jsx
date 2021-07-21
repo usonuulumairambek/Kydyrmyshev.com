@@ -52,7 +52,7 @@ function Contacts() {
         
         </form>
       
-          <button>Send</button>
+          <button className="form__btn">Send</button>
       </div>
     </div>
   );

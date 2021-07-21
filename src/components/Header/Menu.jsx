@@ -1,6 +1,6 @@
 import React from "react";
 import ins from "./images/ins.svg";
-import fb from "./images/fb.svg";
+import fb from "./images/fb.png";
 
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
@@ -60,13 +60,13 @@ function Menu({ open, setOpen }) {
             </Link>
           </div>
      <div className="navbar__social">
-       <div className="navbar__social-ins">
-        <a href="#">
+       <div className="navbar__social-inss">
+        <a target='_blank' href="https://www.instagram.com/kydyrmyshev_ruslan/">
           <img src={ins} alt="" />
         </a>
        </div>
        <div className="navbar__social-fb">
-       <a href="#">
+       <a target='_blank' href="https://www.facebook.com/profile.php?id=100008320635922">
           <img src={fb} alt="" />
         </a>
        </div>
