@@ -1,13 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './header.css';
-import { BrowserRouter, Link } from "react-router-dom";
-
+import {  Link } from "react-router-dom";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+// import SideBar from './SideBar';
 const Header = () => {
+    useEffect(() => {
+        Aos.init({duration:2000 });
+       }, [])
     return (
       
             <div className="header">
-                <div className="header__wrapper">
-                    <div className="header__tittle">
+                 {/* <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} /> */}
+
+                <div data-aos="zoom-in"  className="header__wrapper">
+                    <div  className="header__tittle">
                         <h1>
                             Ruslan Kydyrmyshev</h1>
                     </div>
