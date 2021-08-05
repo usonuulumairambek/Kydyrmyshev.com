@@ -1,7 +1,7 @@
 import React from "react";
 import './burger.css'
 import ButgerImg from "./burgerImg.svg";
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 function Burger({open, setOpen}) {
   const StyledBurger = styled.button`
     background: transparent;

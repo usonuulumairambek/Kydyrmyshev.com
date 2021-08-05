@@ -3,7 +3,7 @@ import ins from "./images/ins.svg";
 import fb from "./images/fb.png";
 
 import { Link } from "react-router-dom";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import "./menu.css";
 function Menu({ open, setOpen }) {
   const StyledMenu = styled.nav`
@@ -61,12 +61,12 @@ function Menu({ open, setOpen }) {
           </div>
      <div className="navbar__social">
        <div className="navbar__social-inss">
-        <a target='_blank' href="https://www.instagram.com/kydyrmyshev_ruslan/">
+        <a  target="_blank" rel="noreferrer"  href="https://www.instagram.com/kydyrmyshev_ruslan/">
           <img src={ins} alt="" />
         </a>
        </div>
        <div className="navbar__social-fb">
-       <a target='_blank' href="https://www.facebook.com/profile.php?id=100008320635922">
+       <a  target="_blank" rel="noreferrer"   href="https://www.facebook.com/profile.php?id=100008320635922">
           <img src={fb} alt="" />
         </a>
        </div>

@@ -35,11 +35,12 @@
 
 .home__container-photo {
     display: flex;
-    justify-content: center;
 }
 
 .home__container-photo img {
-    width: 60%;
+    width: 60%!important;
+    height: auto!important;
+    margin-left: 20%;
 }
 
 .home__contacts {
@@ -78,6 +79,11 @@
         display: flex;
         flex-direction: column;
     }
+    .home__container-photo img {
+        width: 60%;
+        height: auto;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 1125px) {
@@ -89,7 +95,6 @@
         width: 50%;
         position: static;
     }
-
     .home__container-info {
         width: 100%;
     }
@@ -103,6 +108,7 @@
         font-size: 52px;
     }
 }
+
 @media (max-width: 460px) {
     .home__container-info h2 {
         font-size: 42px;
