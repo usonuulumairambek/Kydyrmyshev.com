@@ -1,23 +1,20 @@
-.photo{
-    background-color: #1e2025;
+.home__left-order-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
+.home__left-order-nav ul li a{
+color: white;
+text-decoration: none;
 
-.selected{
-    height: 70%
-}
 
-.selected div img{
-    width: 70%;
-    height: 60%;
 }
-.slide div img{
-    width: 500px;
+.home__left{
+    width: 100%;
 }
-.photo__wrapper{
-    max-width: 90%;
-    margin: 0 auto;
-}
-.img7{
-    width: 60%!important;
-    height: 90%;
+.home{
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
 }

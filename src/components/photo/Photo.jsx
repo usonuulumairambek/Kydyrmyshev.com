@@ -1,6 +1,5 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import img4 from "./images/img4.jpg";
 import img2 from "./images/img2.jpg";
 import img3 from "./images/img3.jpg";
@@ -11,58 +10,68 @@ import img7 from "./images/img7.webp";
 import img8 from "./images/img8.webp";
 import img9 from "./images/img9.webp";
 import img10 from "./images/img10.webp";
-
+import { BrowserRouter, NavLink, Switch, Route } from "react-router-dom";
 import "./photo.css";
-import Aos from 'aos';
+import Aos from "aos";
 import "aos/dist/aos.css";
-
+import Kelechek from "./components/kelechek/Kelechek";
 const Photo = () => {
-    useEffect(() => {
-        Aos.init({duration:2000 });
-       }, [])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div  className="photo">
-      <div data-aos="fade-up"
-    data-aos-duration="3000" className="photo__wrapper">
-        <Carousel>
-        {/* <div>
-            <img src={img1} alt='some value'  />
-            <p className="legend"></p>
+    <BrowserRouter>
+      <div className="home">
+        <div className="home__left">
+          <div className="home__left-order-taxi">
+            <div className="home__left-order-nav">
+              <ul>
+                <li>
+                  <NavLink to="/bakubat-kelechek">"Бакубат келечек"</NavLink>
+                </li>{" "}
+                <li>
+                  <NavLink to="/app">Wef global</NavLink>
+                </li>{" "}
+                <li>
+                  <NavLink to="/delivery"></NavLink>
+                </li>{" "}
+                <li>
+                  <NavLink to="/taxi-for-business">Личные фотографии</NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div> */}
-          <div>
-            <img alt='some value' src={img1} />
-          </div>
-          <div>
-            <img src={img2} alt='some value'  />
-          </div>
-          <div>
-            <img src={img3} alt='some value'  />    
-          </div>
-          <div>
-            <img src={img4} alt='some value'  />
-          </div>
-          <div>
-            <img src={img5} alt='some value'  />
-          </div>
-          <div>
-            <img src={img6} alt='some value'  />
-          </div>
-          <div>
-            <img className="img7" src={img7} alt='some value'  />
-          </div>
-          <div>
-            <img src={img8} alt='some value'  />
-          </div>
-          <div>
-            <img src={img9} alt='some value'  />
-          </div>
-          <div>
-            <img src={img10} alt='some value'  />
-          </div>
-        </Carousel>
+        </div>
+        <div className="home__right">
+          {/* <Header /> */}
+          <Switch>
+            <Route path="/bakubat-kelechek">
+              <Kelechek />
+            </Route>
+            <Route path="/">
+            </Route>
+            <Route path="/delivery">d </Route>
+            <Route path="/taxi-for-business">d </Route>
+            <Route path="/by-driver">d </Route>
+            <Route path="/couriers">d </Route>
+            <Route path="/vacancies">d </Route>
+            <Route path="/partners">d </Route>
+            <Route path="/blog">
+              <h1>Блог</h1> <br />
+              Страница в процессе разработки!!!
+            </Route>
+            <Route path="/company">
+              <h1>О компании</h1> <br />
+              Страница в процессе разработки!!!
+            </Route>{" "}
+            <Route path="/contacts">
+              <h1>Контакты</h1> <br />
+              Страница в процессе разработки!!!
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 

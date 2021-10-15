@@ -4,39 +4,15 @@ import homeImg from "./images/homeImg.jpg";
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import Contacts from '../contacts/Contacts';
-
-// const Home = () => {
-
-
-//     return (
-//         <div className="home">
-//             <div className="home__wrapper">
-//                 <div className="home__container">
-//                     <div  data-aos="fade-up" className="home__container-info">
-//                         <h2  data-aos="zoom-in">Ruslan <br /> Kydyrmyshev</h2>
-//                         <p>Counselor to The President of the Kyrgyz Republic <br />
-
-//                             President of the World Federation of National <br /> Wrestling @wef_global
-
-//                         </p>
-//                     </div>
-//                     <div data-aos="flip-up" className="home__container-photo">
-//                         <img src={homeImg} alt="" />
-//                     </div>
-//                 </div>
-//             </div>
-//           <Contacts />
-//             <div className="home__footer">
-//                 <p>©2021 Ruslan Kydyrmyshev</p>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Home;
+import { useTranslation } from "react-i18next";
+import "./../../utils/i18next";
 
 
 function Home() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage =(lang)=>{
+    i18n.changeLanguage(lang);
+  }
     useEffect(() => {
         Aos.init({duration:2000 });
        }, [])
@@ -45,10 +21,9 @@ function Home() {
       <div className="home">
         <div className="home__container">
           <div  data-aos="fade-up" className="home__container-info">
-            <h1 className="home__container-tittle">Ruslan Kydyrmyshev</h1>
+            <h1 className="home__container-tittle">{t("home.home_name")}</h1>
             <p className="home__container-subtittle">
-              Counselor to The President of the Kyrgyz Republic President of the
-              World Federation of National Wrestling @wef_global
+            {t("home.home_about")}
             </p>
           </div>
           <div  data-aos="flip-up" className="home__container-photo">

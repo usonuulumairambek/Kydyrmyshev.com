@@ -1,5 +1,5 @@
 .home__container-photo img {
-    width: 90%;
+    width: 550px;
 }
 
 .home {
@@ -17,8 +17,8 @@
 }
 
 .home__container-photo {
-    width: 48%;
-    height: 350px;
+    width: 50%;
+    height: 450px;
 }
 
 .home__container-photo {
@@ -55,6 +55,14 @@
 }
 
 @media (max-width: 660px) {
+    
+.home__container-photo {
+    width: 50%;
+    height: 280px;
+}
+    .home__container-photo img {
+        width: 350px;
+    }
     .home__container-tittle {
         color: white;
         font-size: 42px;
