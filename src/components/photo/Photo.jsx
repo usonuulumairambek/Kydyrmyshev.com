@@ -15,6 +15,8 @@ import "./photo.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Kelechek from "./components/kelechek/Kelechek";
+import News from "./components/news/News";
+import PersonaPhotos from "./components/personal-photos/PersonaPhotos";
 const Photo = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -30,13 +32,13 @@ const Photo = () => {
                   <NavLink to="/bakubat-kelechek">"Бакубат келечек"</NavLink>
                 </li>{" "}
                 <li>
-                  <NavLink to="/app">Wef global</NavLink>
+                  <NavLink to="/wef-global">Wef global</NavLink>
                 </li>{" "}
                 <li>
                   <NavLink to="/delivery"></NavLink>
                 </li>{" "}
                 <li>
-                  <NavLink to="/taxi-for-business">Личные фотографии</NavLink>
+                  <NavLink to="/personal-photos">Личные фотографии</NavLink>
                 </li>
               </ul>
             </div>
@@ -45,12 +47,18 @@ const Photo = () => {
         <div className="home__right">
           {/* <Header /> */}
           <Switch>
+          <Route path="/photos">
+              <Kelechek />
+            </Route>
             <Route path="/bakubat-kelechek">
               <Kelechek />
             </Route>
-            <Route path="/">
+            <Route path="/wef-global">
+              <News />
             </Route>
-            <Route path="/delivery">d </Route>
+            <Route path="/personal-photos">
+              <PersonaPhotos />
+            </Route>
             <Route path="/taxi-for-business">d </Route>
             <Route path="/by-driver">d </Route>
             <Route path="/couriers">d </Route>

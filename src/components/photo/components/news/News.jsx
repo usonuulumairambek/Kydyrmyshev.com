@@ -1,20 +1,17 @@
 import React from "react";
-import img1 from "./../../images/img9.webp";
-import img2 from "./images/img2.jpg"
-import "./kelechek.css";
-function Kelechek() {
+import img10 from "./images/img10.jpg";
+import img11 from "./images/img11.jpg";
+
+function News() {
   return (
     <div className="kelechek">
       <div className="news__item">
-        <span className="news__date">26.12.2020</span>
-        <p className="news__title">
-          Ждут новогоднего чуда дети-сироты .Надеются и верят, что к ним
-          обязательно придёт Дед Мороз и подарит долгожданные подарки.🎅🎅🎅
-        </p>
+        <span className="news__date">12.10.2021</span>
+        <p className="news__title">wef global</p>
         <div className="news__line news__line-1" />
         <span className="news__info">
           <div className="news__pic-one">
-            <img src={img1} alt="firstmark" />
+            <img src={img10} alt="firstmark" />
           </div>
         </span>
         <div className="news__line news__line-2" />
@@ -32,7 +29,7 @@ function Kelechek() {
         </p>
         <span className="news__info">
           <div className="news__pic-one">
-            <img src={img2} alt="firstmark" />
+            <img src={img11} alt="firstmark" />
           </div>
         </span>
         <div className="news__line news__line-2" />
@@ -41,4 +38,4 @@ function Kelechek() {
   );
 }
 
-export default Kelechek;
+export default News;
