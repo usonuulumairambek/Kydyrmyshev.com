@@ -1,44 +1,115 @@
-import React from "react";
-import img1 from "./../../images/img9.webp";
-import img2 from "./images/img2.jpg"
 import "./kelechek.css";
-function Kelechek() {
-  return (
-    <div className="kelechek">
-      <div className="news__item">
-        <span className="news__date">26.12.2020</span>
-        <p className="news__title">
-          Ждут новогоднего чуда дети-сироты .Надеются и верят, что к ним
-          обязательно придёт Дед Мороз и подарит долгожданные подарки.🎅🎅🎅
-        </p>
-        <div className="news__line news__line-1" />
-        <span className="news__info">
-          <div className="news__pic-one">
-            <img src={img1} alt="firstmark" />
-          </div>
-        </span>
-        <div className="news__line news__line-2" />
+import React from "react";
+
+let slides = [
+  {
+    background: "https://i.stack.imgur.com/aoTwN.png",
+    text: "Road",
+  },
+  {
+    background: "https://i.stack.imgur.com/aoTwN.png",
+    text: "America",
+  },
+  {
+    background: "https://i.stack.imgur.com/aoTwN.png",
+    text: "Pieapple",
+  },
+];
+
+class Slide extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    let slideStyle = { backgroundImage: `url( ${this.props.background})` };
+    return (
+      <div
+        className="slider__slide"
+        data-active={this.props.active}
+        style={slideStyle}
+      >
+        <div className="slider__slide__text">{this.props.text}</div>
       </div>
-      <div className="news__item">
-        <span className="news__date">26.12.2020</span>
-        <p className="news__title">Бакубат келечек</p>
-        <div className="news__line news__line-1" />
-        <p>
-          С праздником дорогие наши Мамы! Пусть ваши самоотверженность,
-          терпение, самоотдача, труд вернутся заботой и благодарностью ваших
-          детей и всего общества! Мы вас очень любим и ценим💐💐💐 Сегодня нашим
-          фондом «Бакубат келечек» была оказана помошь более 20 многодетным
-          матерям, которые оказались в сложной ситуации.
-        </p>
-        <span className="news__info">
-          <div className="news__pic-one">
-            <img src={img2} alt="firstmark" />
-          </div>
-        </span>
-        <div className="news__line news__line-2" />
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
-export default Kelechek;
+class Slider extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeSlide: 0,
+      interval: 3,
+      autoplay: true,
+    };
+  }
+  componentDidMount() {
+    this.timerId = setInterval(() => {
+      console.log(this.state.autoplay);
+      if (this.state.autoplay) {
+        this.nextSlide();
+      }
+    }, this.state.interval * 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerId);
+  }
+
+  pause() {
+    this.setState({ autoplay: false });
+  }
+
+  resume() {
+    this.setState({ autoplay: true });
+  }
+
+  prevSlide() {
+    let slide =
+      this.state.activeSlide - 1 < 0
+        ? slides.length - 1
+        : this.state.activeSlide - 1;
+    this.setState({
+      activeSlide: slide,
+    });
+  }
+
+  nextSlide() {
+    let slide =
+      this.state.activeSlide + 1 < slides.length
+        ? this.state.activeSlide + 1
+        : 0;
+    this.setState({
+      activeSlide: slide,
+    });
+  }
+
+  render() {
+    var slides = this.props.slides;
+    return (
+      <div
+        onMouseEnter={this.pause.bind(this)}
+        onMouseLeave={this.resume.bind(this)}
+      >
+        {slides.map((slide, index) => {
+          return (
+            <Slide
+              background={slide.background}
+              text={slide.text}
+              active={index === this.state.activeSlide}
+            />
+          );
+        })}
+        <div className="rightArrow" onClick={this.nextSlide.bind(this)}>
+          <i className="fa fa-4x fa-arrow-circle-right"></i>
+        </div>
+        <div className="leftArrow" onClick={this.prevSlide.bind(this)}>
+          {" "}
+          <i className="fa fa-4x fa-arrow-circle-left"></i>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Slide;

@@ -1,0 +1,33 @@
+.program__container {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-size: 25px;
+    color: #004f9d;
+}
+
+.program__container-text {
+    padding: 3%;
+}
+
+.program__container-left img {
+    width: 400px;
+}
+
+.program__container-photo {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program__container-photo img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.program__container-text h1 {
+    width: 100%;
+}

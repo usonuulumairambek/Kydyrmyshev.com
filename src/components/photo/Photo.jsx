@@ -1,15 +1,4 @@
 import React, { useEffect } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import img4 from "./images/img4.jpg";
-import img2 from "./images/img2.jpg";
-import img3 from "./images/img3.jpg";
-import img1 from "./images/img1.webp";
-import img5 from "./images/img5.webp";
-import img6 from "./images/img6.webp";
-import img7 from "./images/img7.webp";
-import img8 from "./images/img8.webp";
-import img9 from "./images/img9.webp";
-import img10 from "./images/img10.webp";
 import { BrowserRouter, NavLink, Switch, Route } from "react-router-dom";
 import "./photo.css";
 import Aos from "aos";
@@ -17,6 +6,7 @@ import "aos/dist/aos.css";
 import Kelechek from "./components/kelechek/Kelechek";
 import News from "./components/news/News";
 import PersonaPhotos from "./components/personal-photos/PersonaPhotos";
+import Slide from "./components/kelechek/Kelechek";
 const Photo = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -32,6 +22,9 @@ const Photo = () => {
                   <NavLink to="/bakubat-kelechek">"Бакубат келечек"</NavLink>
                 </li>{" "}
                 <li>
+                  <NavLink to="/delivery"></NavLink>
+                </li>{" "}
+                <li>
                   <NavLink to="/wef-global">Wef global</NavLink>
                 </li>{" "}
                 <li>
@@ -44,11 +37,11 @@ const Photo = () => {
             </div>
           </div>
         </div>
-        <div className="home__right">
+        <div className="">
           {/* <Header /> */}
           <Switch>
-          <Route path="/photos">
-              <Kelechek />
+            <Route path="/photos">
+              <Slide />
             </Route>
             <Route path="/bakubat-kelechek">
               <Kelechek />

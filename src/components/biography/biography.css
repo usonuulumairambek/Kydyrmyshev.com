@@ -1,40 +1,68 @@
 .biography {
-    background-color: #1e2025;
+    background-color: #e6e5e7;
 }
 
 .biography__photo {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
 }
 
-
 .biography__text h1 {
     text-align: center;
-    color: #fff;
+    color: #004f9d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     line-height: 1.35em;
 }
 
 .biography__text p {
-    color: #fff;
+    color: #000;
     font-size: 20px;
     line-height: 1.23em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .biography__text {
-    padding: 10%;
+    padding: 10% 10% 0 10%;
     padding-top: 0;
     max-width: 80%;
     margin: 0 auto;
 }
 
 .biography__photo img {
-    width: 250px;
     height: 250px;
+}
 
-    border-radius: 250px;
+.bio__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bio__items-1 {
+    padding: 50px;
+    width: 50%;
+}
+
+.bio__items-1 p, .bio__items-2 p {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.23em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bio__items-2 {
+    padding: 50px;
+    width: 50%;
+}
+
+.bio__items-1 h1 {
+    color: #d51f48;
+}
+
+.bio__items-2 h1 {
+    color: #004f9d;
 }
 
 @media (max-width: 700px) {
@@ -42,5 +70,4 @@
         width: 250px;
         border-radius: 100%;
     }
-    
 }

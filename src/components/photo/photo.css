@@ -4,8 +4,22 @@
     justify-content: space-around;
 }
 
+@media (max-width: 500px) {
+    .home__left-order-nav ul {
+        flex-direction: column;
+    }
+    .home__left-order-nav ul li a {
+        margin: 20px;
+    }
+}
+
 .home__left-order-nav ul li a {
     color: white;
+    text-decoration: none;
+}
+
+.home__left-order-nav ul li a:hover {
+    color: #ff9100;
     text-decoration: none;
 }
 

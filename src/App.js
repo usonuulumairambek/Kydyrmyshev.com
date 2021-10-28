@@ -6,6 +6,9 @@ import Biography from "./components/biography/Biography";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Photo from "./components/photo/Photo";
 import Kelechek from "./components/photo/components/kelechek/Kelechek";
+import Program from "./components/program/Program";
+import Charity from "./components/charity/Charity";
+import Sport from "./components/sport/Sport";
 function App() {
   return (
     <Suspense fallback={"Loader"}>
@@ -30,9 +33,15 @@ function App() {
           <Route path="/bakubat-kelechek">
             <Kelechek />
           </Route>
-          <Route path="/"></Route>
-          <Route path="/delivery">d </Route>
-          <Route path="/taxi-for-business">d </Route>
+          <Route path="/program">
+            <Program />
+          </Route>
+          <Route path="/Charity">
+            <Charity />
+          </Route>
+          <Route path="/sport">
+            <Sport />
+          </Route>
           <Route path="/by-driver">d </Route>
           <Route path="/couriers">d </Route>
           <Route path="/vacancies">d </Route>

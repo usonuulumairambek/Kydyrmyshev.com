@@ -59,6 +59,15 @@ function Menu({ open, setOpen }) {
               Photos
             </Link>
           </div>
+          <div className="header__navbar-item">
+            <Link onClick={() => setOpen(!open)} to="/photos">
+              Photos
+            </Link>
+          </div><div className="header__navbar-item">
+            <Link onClick={() => setOpen(!open)} to="/photos">
+              Photos
+            </Link>
+          </div>
      <div className="navbar__social">
        <div className="navbar__social-inss">
         <a  target="_blank" rel="noreferrer"  href="https://www.instagram.com/kydyrmyshev_ruslan/">

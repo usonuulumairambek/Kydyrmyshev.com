@@ -1,10 +1,10 @@
 import React from "react";
 import './burger.css'
-import ButgerImg from "./burgerImg.svg";
+import ButgerImg from "./../Header/images/hamburger-menu.png";
 import styled from 'styled-components'
 function Burger({open, setOpen}) {
   const StyledBurger = styled.button`
-    background: transparent;
+    background: #fff;
     border: none;
     cursor: pointer;
     z-index: 100;

@@ -4,19 +4,17 @@ import "aos/dist/aos.css";
 import "./contakts.css";
 import { useTranslation } from "react-i18next";
 import "./../../utils/i18next";
-
 function Contacts() {
   const { t, i18n } = useTranslation();
-  const changeLanguage =(lang)=>{
+  const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
-  }
+  };
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <div>
       {/* <form action="./telegram.php" method="POST"> */}
-
       <div data-aos="zoom-in" className="home__contacts">
         <form action="" method="POST">
           <legend>{t("contact.us")}</legend>
@@ -51,18 +49,14 @@ function Contacts() {
             <textarea
               name="msg"
               className="form-control"
-
               placeholder={t("contact.message")}
               defaultValue={""}
             />
           </div>
-        
         </form>
-      
-          <button className="form__btn">{t("contact.button")}</button>
+        <button className="form__btn">{t("contact.button")}</button>
       </div>
     </div>
   );
 }
-
 export default Contacts;
