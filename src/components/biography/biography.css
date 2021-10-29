@@ -67,7 +67,13 @@
 
 @media (max-width: 700px) {
     .biography__photo img {
-        width: 250px;
-        border-radius: 100%;
+        width: 90%;
+        height: 90%;
+    }
+    .bio__items {
+        flex-direction: column;
+    }
+    .bio__items-2, .bio__items-1 {
+        width: 70%;
     }
 }

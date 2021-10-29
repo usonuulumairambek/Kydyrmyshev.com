@@ -3,29 +3,28 @@ import "./home.css";
 import photoimg from "./images/home_photo.png";
 import burch from "./images/burch.png";
 import name from "./images/name.png";
-// import homeImg from "./images/homeImg.jpg";
+import homeImg from "./images/homeImg.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-// import { useTranslation } from "react-i18next";
-// import "./../../utils/i18next";
+import { useTranslation } from "react-i18next";
+import "./../../utils/i18next";
 function Home() {
-  // const { t, i18n } = useTranslation();
-  // const changeLanguage =(lang)=>{
-  //   i18n.changeLanguage(lang);
-  // }
-  //   useEffect(() => {
-  //       Aos.init({duration:2000 });
-  //      }, [])
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="home">
       <div className="home_container">
         <div className="home_container-text">
           <div className="home_container-text2">
             <div>
-              <h2>"ПOВЕРЬ В РЕАЛЬНЫЕ ПЕРЕМЕНЫ"</h2>
-              <h1>"ЧЫНЫГЫ ОЗГОРУУГО ИШЕН"</h1>
+              <h1> {t("home.home_about")}</h1>
+              {/* <h1>"ЧЫНЫГЫ ОЗГОРУУГО ИШЕН"</h1> */}
             </div>
-
             <div className="home_container-name">
               <h3>
                 Кыдырмышев <br /> <span>Руслан</span>{" "}

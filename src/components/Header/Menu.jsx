@@ -1,15 +1,20 @@
 import React from "react";
 import ins from "./images/ins.svg";
 import fb from "./images/fb.png";
-
+import { useTranslation } from "react-i18next";
+import "./../../utils/i18next";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "./menu.css";
 function Menu({ open, setOpen }) {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
   const StyledMenu = styled.nav`
     display: flex;
     width: 50%;
-    background: #1e2025;
+    background: #1e21a4;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-200%)")};
     height: 100vh;
     text-align: left;
@@ -25,7 +30,7 @@ function Menu({ open, setOpen }) {
     a {
       font-size: 20px;
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 100;
       text-decoration: none;
       transition: color 0.3s linear;
 
@@ -35,7 +40,7 @@ function Menu({ open, setOpen }) {
       }
 
       &:hover {
-        color: #343078;
+        color: #d51f48;
       }
     }
   `;
@@ -46,40 +51,54 @@ function Menu({ open, setOpen }) {
         <div className="navbar">
           <div className="header__navbar-item">
             <Link onClick={() => setOpen(!open)} to="/home">
-              Home
+              {t("header.header_nav1")}
             </Link>
           </div>
           <div className="header__navbar-item">
             <Link onClick={() => setOpen(!open)} to="/biography">
-              Biography
+              {t("header.header_nav2")}
             </Link>
           </div>
           <div className="header__navbar-item">
-            <Link onClick={() => setOpen(!open)} to="/photos">
-              Photos
+            <Link onClick={() => setOpen(!open)} to="/program">
+              {t("header.header_nav4")}
             </Link>
           </div>
           <div className="header__navbar-item">
-            <Link onClick={() => setOpen(!open)} to="/photos">
-              Photos
+            <Link onClick={() => setOpen(!open)} to="/Charity">
+              {t("header.header_nav5")}
             </Link>
-          </div><div className="header__navbar-item">
-            <Link onClick={() => setOpen(!open)} to="/photos">
-              Photos
+          </div>{" "}
+          <div className="header__navbar-item">
+            <Link onClick={() => setOpen(!open)} to="/sport">
+              {t("header.header_nav6")}
             </Link>
+          </div>{" "}
+          <div className="header__navbar-item">
+            <Link onClick={() => setOpen(!open)} to="/photos">
+              {t("header.header_nav3")}
+            </Link>
+          </div>{" "}
+          <div className="navbar__social">
+            <div className="navbar__social-inss">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/kydyrmyshev_ruslan/"
+              >
+                <img src={ins} alt="" />
+              </a>
+            </div>
+            <div className="navbar__social-fb">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/profile.php?id=100008320635922"
+              >
+                <img src={fb} alt="" />
+              </a>
+            </div>
           </div>
-     <div className="navbar__social">
-       <div className="navbar__social-inss">
-        <a  target="_blank" rel="noreferrer"  href="https://www.instagram.com/kydyrmyshev_ruslan/">
-          <img src={ins} alt="" />
-        </a>
-       </div>
-       <div className="navbar__social-fb">
-       <a  target="_blank" rel="noreferrer"   href="https://www.facebook.com/profile.php?id=100008320635922">
-          <img src={fb} alt="" />
-        </a>
-       </div>
-     </div>
         </div>
       </StyledMenu>
     </div>

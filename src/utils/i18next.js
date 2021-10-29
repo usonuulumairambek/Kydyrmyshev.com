@@ -7,7 +7,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "eng",
+    fallbackLng: "ru",
     whiteList: ["kg", "ru", "eng"],
     debug: false,
     detection: {

@@ -4,7 +4,7 @@ import ButgerImg from "./../Header/images/hamburger-menu.png";
 import styled from 'styled-components'
 function Burger({open, setOpen}) {
   const StyledBurger = styled.button`
-    background: #fff;
+    background: #004f9d;
     border: none;
     cursor: pointer;
     z-index: 100;

@@ -1,13 +1,16 @@
 {
     "header": {
         "header_tittle": "Ruslan Kydyrmyshev",
+        "header_nav4": "Program",
+        "header_nav5": "Charity",
+        "header_nav6": "Sport",
+        "header_nav3": "Gallery",
         "header_nav1": "Home",
-        "header_nav2": "Biography",
-        "header_nav3": "Photos"
+        "header_nav2": "Biography"
     },
     "home": {
         "home_name": "Ruslan Kydyrmyshev",
-        "home_about": "Counselor to The President of the Kyrgyz Republic President of the World Federation of National Wrestling @wef_global"
+        "home_about": " ''BELIEVE IN REAL CHANGE'' "
     },
     "contact":{
         "us": "contact us",

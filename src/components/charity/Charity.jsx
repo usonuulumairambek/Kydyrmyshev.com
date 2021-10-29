@@ -1,7 +1,12 @@
 import React from "react";
 import img10 from "./images/img1.jpeg";
-import img11 from "./images/img1.jpeg"
+import img11 from "./images/img2.jpeg";
 import img12 from "./images/img3.jpeg";
+import p1 from "./images/p1.jpg";
+
+import p2 from "./images/p2.jpg";
+import p3 from "./images/p3.jpg";
+
 function Charity() {
   return (
     <div>
@@ -66,7 +71,7 @@ function Charity() {
           </p>
           <span className="news__info">
             <div className="news__pic-one">
-              <img src={img11} alt="firstmark" />
+              <img src={p1} alt="firstmark" />
             </div>
           </span>
           <div className="news__line news__line-2" />
@@ -84,7 +89,7 @@ function Charity() {
           </p>
           <span className="news__info">
             <div className="news__pic-one">
-              <img src={img11} alt="firstmark" />
+              <img src={p2} alt="firstmark" />
             </div>
           </span>
           <div className="news__line news__line-2" />
@@ -102,7 +107,7 @@ function Charity() {
           </p>
           <span className="news__info">
             <div className="news__pic-one">
-              <img src={img11} alt="firstmark" />
+              <img src={p3} alt="firstmark" />
             </div>
           </span>
           <div className="news__line news__line-2" />
