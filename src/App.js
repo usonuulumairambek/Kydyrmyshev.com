@@ -16,10 +16,12 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Header />
+
         </div>
         <Switch>
           <Route path="/home">
             <Home />
+            <Biography />
           </Route>
           <Route path="/" exact>
             <Home />

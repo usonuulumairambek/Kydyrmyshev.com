@@ -61,21 +61,24 @@ const Header = () => {
           onClick={() => changeLanguage("eng")}
           href="kdn"
         >
-          Eng
+          <img style={{width:30}} src="https://www.rabstol.net/uploads/gallery/main/229/rabstol_net_flags_57.jpg" alt="" />
         </div>
         <div
           style={{ cursor: "pointer", color: "white", margin: "0 10px 0 10px" }}
           onClick={() => changeLanguage("ru")}
           href="kdn"
         >
-          Ru
+                    <img style={{width:30}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/250px-Flag_of_Russia.svg.png" alt="" />
+
         </div>
         <div
           style={{ cursor: "pointer", color: "white", margin: "0 10px 0 10px" }}
           onClick={() => changeLanguage("kg")}
           href="kdn"
         >
-          Kg
+                    <img style={{width:30}} src="
+                    https://www.kartinki24.ru/uploads/gallery/main/83/kartinki24_ru_country_flags_120.jpg" alt="" />
+
         </div>
       </div>
       <div ref={node} className="burger">
