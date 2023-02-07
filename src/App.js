@@ -9,22 +9,19 @@ import Kelechek from "./components/photo/components/kelechek/Kelechek";
 import Program from "./components/program/Program";
 import Charity from "./components/charity/Charity";
 import Sport from "./components/sport/Sport";
+import SimpleSlider from "./components/SimpleSlider";
 function App() {
   return (
-    <Suspense fallback={"Loader"}>
-      {" "}
+    <Suspense fallback={"Загрузка"}>
       <BrowserRouter>
         <div className="App">
           <Header />
-
         </div>
         <Switch>
-          <Route path="/home">
-            <Home />
-            <Biography />
-          </Route>
           <Route path="/" exact>
             <Home />
+            <Biography />
+            <SimpleSlider />
           </Route>
           <Route path="/biography" exact>
             <Biography />

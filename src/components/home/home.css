@@ -1,9 +1,32 @@
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('./../fonts/gothampro_black.ttf') format('woff');
+  }
 .home {
     width: 100%;
     background-image: url(./images/bg.png);
     background-position: center;
     background-size: cover;
     height: auto;
+}
+.modal__button {
+    cursor: pointer;
+    text-align: center;
+    background-color: #d51f48;
+    border-radius: 20px;
+    padding: 20px 50px 20px 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btnbtn {
+    display: flex;
+    justify-content: center;
 }
 
 .home_container {
@@ -13,7 +36,7 @@
 }
 
 .home_container-text2 {
-    margin: 30px 0 0 30px;
+    margin: 15px 0 0 10px;
 }
 
 .home_container-text2 h1 {
@@ -23,7 +46,8 @@
 }
 
 .home_container-text2 h3 {
-    font-weight: 900;
+    font-family: 'Myriad Pro Regular';
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 60px;
     color: #004f9d;
@@ -33,11 +57,13 @@
 .home_container-name {
     position: relative;
     z-index: 2;
-    margin-top: 230px;
-    margin-left: 100px;
+    margin-top: 250px;
+    margin-left: 90px;
 }
 
 .home_container-text2 h3 span {
+    font-family: 'Myriad Pro Regular';
+    font-weight: bold;
     letter-spacing: 12px;
     font-size: 100px;
     color: #d51f48;
@@ -108,7 +134,7 @@
         margin: 13px 0 0 13px;
     }
     .home_container-name h3 {
-        font-size: 30px;
+        font-size: 27px;
     }
     .home_container-name h3 span {
         font-size: 42px;

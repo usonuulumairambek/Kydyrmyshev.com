@@ -26,7 +26,7 @@ const Header = () => {
           </div>
           <div className="header__navbar">
             <div className="header__navbar-item">
-              <Link to="/home">{t("header.header_nav1")}</Link>
+              <Link to="/">{t("header.header_nav1")}</Link>
             </div>
             <div className="header__navbar-item">
               <Link to="/biography">{t("header.header_nav2")}</Link>
@@ -35,9 +35,9 @@ const Header = () => {
             <div className="header__navbar-item">
               <Link to="/program">{t("header.header_nav4")}</Link>
             </div>
-            <div className="header__navbar-item">
+            {/* <div className="header__navbar-item">
               <Link to="/Charity">{t("header.header_nav5")}</Link>
-            </div>
+            </div> */}
             <div className="header__navbar-item">
               <Link to="/sport">{t("header.header_nav6")}</Link>
             </div>
@@ -61,23 +61,21 @@ const Header = () => {
           onClick={() => changeLanguage("eng")}
           href="kdn"
         >
-          <img style={{width:30}} src="https://www.rabstol.net/uploads/gallery/main/229/rabstol_net_flags_57.jpg" alt="" />
+          Eng
         </div>
         <div
           style={{ cursor: "pointer", color: "white", margin: "0 10px 0 10px" }}
           onClick={() => changeLanguage("ru")}
           href="kdn"
         >
-                    <img style={{width:30}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/250px-Flag_of_Russia.svg.png" alt="" />
-
+Ru
         </div>
         <div
           style={{ cursor: "pointer", color: "white", margin: "0 10px 0 10px" }}
           onClick={() => changeLanguage("kg")}
           href="kdn"
         >
-                    <img style={{width:30}} src="
-                    https://www.kartinki24.ru/uploads/gallery/main/83/kartinki24_ru_country_flags_120.jpg" alt="" />
+                   Kg
 
         </div>
       </div>

@@ -1,9 +1,30 @@
+.slider{
+    background-color: #e6e5e7;
+}
+.slick-arrow{
+display: none!important;
+} 
+.slick-next{
+    display: none!important;
+}
+.slider__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.slider__container img{
+    margin: 1%;
+    width: 350px;
+}
+
 .news__info {
     line-height: 132.3%;
     font-size: 17px;
     max-width: 1200px;
     margin: 35px 10px;
 }
+
 .news__title {
     margin: 20px 10px 20px 10px;
     text-align: center;

@@ -50,7 +50,7 @@ function Menu({ open, setOpen }) {
       <StyledMenu open={open}>
         <div className="navbar">
           <div className="header__navbar-item">
-            <Link onClick={() => setOpen(!open)} to="/home">
+            <Link onClick={() => setOpen(!open)} to="/">
               {t("header.header_nav1")}
             </Link>
           </div>
@@ -64,11 +64,11 @@ function Menu({ open, setOpen }) {
               {t("header.header_nav4")}
             </Link>
           </div>
-          <div className="header__navbar-item">
+          {/* <div className="header__navbar-item">
             <Link onClick={() => setOpen(!open)} to="/Charity">
               {t("header.header_nav5")}
             </Link>
-          </div>{" "}
+          </div>{" "} */}
           <div className="header__navbar-item">
             <Link onClick={() => setOpen(!open)} to="/sport">
               {t("header.header_nav6")}

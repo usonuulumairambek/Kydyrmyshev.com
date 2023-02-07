@@ -7,17 +7,14 @@
     margin: 0 auto;
     padding-top: 20px;
 }
-
 .home__container {
     overflow: hidden;
     background-color: #26282d;
     display: flex;
 }
-
 .home__container-info {
     width: 50%;
 }
-
 .home__container-info h2 {
     margin-top: 150px;
     font-size: 72px;

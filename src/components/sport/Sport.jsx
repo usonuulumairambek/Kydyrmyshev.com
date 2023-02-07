@@ -134,9 +134,9 @@ function Sport() {
           </span>
           <div className="news__line news__line-2" />
         </div>{" "}
-        <div className="news__item">
+        {/* <div className="news__item">
           <span className="news__date">26.12.2020</span>
-          <p className="news__title">Спорт</p>
+          <p className="news__title">Споыврт</p>
           <div className="news__line news__line-1" />
           <p></p>
           <span className="news__info">
@@ -145,8 +145,8 @@ function Sport() {
             </div>
           </span>
           <div className="news__line news__line-2" />
-        </div>
-        <div className="news__item">
+        </div> */}
+        {/* <div className="news__item">
           <span className="news__date">26.12.2020</span>
           <p className="news__title">Спорт</p>
           <div className="news__line news__line-1" />
@@ -157,7 +157,8 @@ function Sport() {
             </div>
           </span>
           <div className="news__line news__line-2" />
-        </div><div className="news__item">
+        </div> */}
+        <div className="news__item">
           <span className="news__date">26.12.2020</span>
           <p className="news__title">Спорт</p>
           <div className="news__line news__line-1" />
@@ -179,7 +180,8 @@ function Sport() {
             </div>
           </span>
           <div className="news__line news__line-2" />
-        </div><div className="news__item">
+        </div>
+        {/* <div className="news__item">
           <span className="news__date">26.12.2020</span>
           <p className="news__title">Спорт</p>
           <div className="news__line news__line-1" />
@@ -190,7 +192,8 @@ function Sport() {
             </div>
           </span>
           <div className="news__line news__line-2" />
-        </div><div className="news__item">
+        </div> */}
+        {/* <div className="news__item">
           <span className="news__date">26.12.2020</span>
           <p className="news__title">Спорт</p>
           <div className="news__line news__line-1" />
@@ -201,7 +204,8 @@ function Sport() {
             </div>
           </span>
           <div className="news__line news__line-2" />
-        </div><div className="news__item">
+        </div> */}
+        <div className="news__item">
           <span className="news__date">26.12.2020</span>
           <p className="news__title">Спорт</p>
           <div className="news__line news__line-1" />
